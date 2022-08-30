@@ -2,7 +2,7 @@
     "title": "Windows shortcuts on macOS - Stijn version",
     "rules": [
         {
-            "description": "Ctrl+Y => Cmd+Shift+Y (Redo)",
+            "description": "Ctrl+Y => Cmd+Shift+Z (Redo)",
             "manipulators": [
                 {
                     "conditions": [
@@ -47,7 +47,7 @@
                         "key_code": "y",
                         "modifiers": {
                             "mandatory": [
-                                "control"
+                                "command"
                             ],
                             "optional": [
                                 "any"
@@ -58,7 +58,7 @@
                         {
                             "key_code": "z",
                             "modifiers": [
-                                "left_command",
+                                "left_control",
                                 "left_shift"
                             ]
                         }
@@ -114,7 +114,7 @@
                         {
                             "key_code": "q",
                             "modifiers": [
-                                "left_command"
+                                "left_control"
                             ]
                         }
                     ],
@@ -123,7 +123,7 @@
             ]
         },
         {
-            "description": "F5 => Cmd+r (Reload)",
+            "description": "F5 => Cmd+R (Reload)",
             "manipulators": [
                 {
                     "conditions": [
@@ -176,7 +176,7 @@
                         {
                             "key_code": "r",
                             "modifiers": [
-                                "left_command"
+                                "left_control"
                             ]
                         }
                     ],
@@ -185,14 +185,14 @@
             ]
         },
         {
-            "description": "Cmd+Tab => Cmd+Alt+0 (Reassigned command for opening Mission control)",
+            "description": "Alt+Tab => Cmd+Alt+0 (Reassigned command for opening Mission control)",
             "manipulators": [
                 {
                     "from": {
                         "key_code": "tab",
                         "modifiers": {
                             "mandatory": [
-                                "left_command"
+                                "option"
                             ],
                             "optional": [
                                 "any"
@@ -454,83 +454,6 @@
             ]
         },
         {
-            "description": "Cmd+L => Logout (CGSession -suspend)",
-            "manipulators": [
-                {
-                    "from": {
-                        "key_code": "l",
-                        "modifiers": {
-                            "mandatory": [
-                                "command"
-                            ],
-                            "optional": [
-                                "any"
-                            ]
-                        }
-                    },
-                    "to": [
-                        {
-                            "shell_command": "/System/Library/CoreServices/Menu\\ Extras/User.menu/Contents/Resources/CGSession -suspend"
-                        }
-                    ],
-                    "type": "basic"
-                }
-            ]
-        },
-        {
-            "description": "Ctrl+Esc => Open Launchpad",
-            "manipulators": [
-                {
-                    "conditions": [
-                        {
-                            "bundle_identifiers": [
-                                "^com\\.microsoft\\.rdc$",
-                                "^com\\.microsoft\\.rdc\\.mac$",
-                                "^com\\.microsoft\\.rdc\\.macos$",
-                                "^com\\.microsoft\\.rdc\\.osx\\.beta$",
-                                "^net\\.sf\\.cord$",
-                                "^com\\.thinomenon\\.RemoteDesktopConnection$",
-                                "^com\\.itap-mobile\\.qmote$",
-                                "^com\\.nulana\\.remotixmac$",
-                                "^com\\.p5sys\\.jump\\.mac\\.viewer$",
-                                "^com\\.p5sys\\.jump\\.mac\\.viewer\\.web$",
-                                "^com\\.teamviewer\\.TeamViewer$",
-                                "^com\\.vmware\\.horizon$",
-                                "^com\\.2X\\.Client\\.Mac$",
-                                "^com\\.vmware\\.fusion$",
-                                "^com\\.vmware\\.horizon$",
-                                "^com\\.vmware\\.view$",
-                                "^com\\.parallels\\.desktop$",
-                                "^com\\.parallels\\.vm$",
-                                "^com\\.parallels\\.desktop\\.console$",
-                                "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
-                                "^com\\.citrix\\.XenAppViewer$",
-                                "^com\\.vmware\\.proxyApp\\.",
-                                "^com\\.parallels\\.winapp\\.",
-                                "^tv\\.parsec\\.www$"
-                            ],
-                            "type": "frontmost_application_unless"
-                        }
-                    ],
-                    "from": {
-                        "key_code": "escape",
-                        "modifiers": {
-                            "mandatory": [
-                                "control"
-                            ]
-                        }
-                    },
-                    "to": [
-                        {
-                            "key_code": "launchpad",
-                            "modifiers": []
-                        }
-                    ],
-                    "type": "basic"
-                }
-            ]
-        },
-        {
             "description": "Ctrl+Shift+Esc => Open Activity Monitor",
             "manipulators": [
                 {
@@ -600,7 +523,7 @@
                         {
                             "key_code": "o",
                             "modifiers": [
-                                "right_command"
+                                "right_control"
                             ]
                         }
                     ],
@@ -656,7 +579,7 @@
                         {
                             "key_code": "delete_or_backspace",
                             "modifiers": [
-                                "left_command"
+                                "left_control"
                             ]
                         }
                     ],
@@ -683,7 +606,7 @@
                         {
                             "key_code": "up_arrow",
                             "modifiers": [
-                                "left_command"
+                                "left_control"
                             ]
                         }
                     ],
