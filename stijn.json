@@ -382,7 +382,7 @@
                         "key_code": "delete_or_backspace",
                         "modifiers": {
                             "mandatory": [
-                                "command"
+                                "control"
                             ],
                             "optional": []
                         }
@@ -440,7 +440,7 @@
                         "key_code": "delete_forward",
                         "modifiers": {
                             "mandatory": [
-                                "command"
+                                "control"
                             ]
                         }
                     },
