@@ -47,7 +47,7 @@
                         "key_code": "y",
                         "modifiers": {
                             "mandatory": [
-                                "command"
+                                "control"
                             ],
                             "optional": [
                                 "any"
@@ -340,6 +340,23 @@
             "description": "Ctrl+Delete/Backspace => Alt+(Fn)+Delete (Delete one word)",
             "manipulators": [
                 {
+                    "from": {
+                        "key_code": "delete_or_backspace",
+                        "modifiers": {
+                            "mandatory": [
+                                "control"
+                            ],
+                            "optional": []
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "delete_or_backspace",
+                            "modifiers": [
+                                "left_option"
+                            ]
+                        }
+                    ],
                     "conditions": [
                         {
                             "bundle_identifiers": [
@@ -376,23 +393,6 @@
                                 "^tv\\.parsec\\.www$"
                             ],
                             "type": "frontmost_application_unless"
-                        }
-                    ],
-                    "from": {
-                        "key_code": "delete_or_backspace",
-                        "modifiers": {
-                            "mandatory": [
-                                "control"
-                            ],
-                            "optional": []
-                        }
-                    },
-                    "to": [
-                        {
-                            "key_code": "delete_or_backspace",
-                            "modifiers": [
-                                "left_option"
-                            ]
                         }
                     ],
                     "type": "basic"
