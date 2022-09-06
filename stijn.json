@@ -398,6 +398,23 @@
                     "type": "basic"
                 },
                 {
+                    "from": {
+                        "key_code": "delete_forward",
+                        "modifiers": {
+                            "mandatory": [
+                                "control"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "delete_or_backspace",
+                            "modifiers": [
+                                "left_option",
+                                "fn"
+                            ]
+                        }
+                    ],
                     "conditions": [
                         {
                             "bundle_identifiers": [
@@ -434,23 +451,6 @@
                                 "^tv\\.parsec\\.www$"
                             ],
                             "type": "frontmost_application_unless"
-                        }
-                    ],
-                    "from": {
-                        "key_code": "delete_forward",
-                        "modifiers": {
-                            "mandatory": [
-                                "control"
-                            ]
-                        }
-                    },
-                    "to": [
-                        {
-                            "key_code": "delete_or_backspace",
-                            "modifiers": [
-                                "left_option",
-                                "keyboard_fn"
-                            ]
                         }
                     ],
                     "type": "basic"
