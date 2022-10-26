@@ -4,9 +4,6 @@ Settings for Karabiner Elements to fix crappy MacOS bindings.
 
 First step, set up your modifier keys to swap Control <-> Command.
 
-Inspiration from here:
-https://github.com/rux616/karabiner-windows-mode
-
 Do:
 
 ```
@@ -16,3 +13,6 @@ mv karabiner-settings complex_modifications
 ```
 
 Then enable the complex modifications from the Karabiner UI.
+
+Inspiration from here:
+https://github.com/rux616/karabiner-windows-mode
