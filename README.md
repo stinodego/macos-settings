@@ -1,4 +1,8 @@
-# Karabiner Elements settings
+# MacOS settings
+
+Unfortunately, default settings for Mac are tragically horrible. A lot of work is required to make the OS function in a remotely acceptable manner. This repository contains steps for configuration.
+
+## Karabiner Elements
 
 Settings for Karabiner Elements to fix crappy MacOS bindings.
 
